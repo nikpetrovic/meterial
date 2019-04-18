@@ -1,0 +1,57 @@
+.forms-container {
+  position: relative;
+  width: 50%;
+  left: 0;
+
+  transition: left 1s ease-in-out;
+}
+
+.signup-active {
+  .forms-container {
+    left: 50%;
+    .login-form-container {
+      animation: switch 1s;
+      animation-fill-mode: forwards;
+    }
+    .signup-form-container {
+      animation: invert-switch 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.login-active {
+  .forms-container {
+    left: 0;
+    .login-form-container {
+      animation: invert-switch 1s;
+      animation-fill-mode: forwards;
+    }
+    .signup-form-container {
+      animation: switch 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes switch {
+  0%,
+  49.99% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes invert-switch {
+  0%,
+  49.99% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}

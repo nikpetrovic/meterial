@@ -1,0 +1,47 @@
+.overlay-container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  z-index: 100;
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 69, 137),
+    rgb(247, 84, 211)
+  );
+  color: white;
+  font-weight: 600;
+  overflow: hidden;
+  transition: left 1s ease-in-out;
+
+  .overlay {
+    position: relative;
+    display: flex;
+    width: 200%;
+    height: 100%;
+    left: -100%;
+    transform: translateX(0%);
+
+    transition: transform 1s ease-in-out;
+  }
+}
+
+.signup-active {
+  .overlay-container {
+    left: 0;
+
+    .overlay {
+      transform: translate(50%);
+    }
+  }
+}
+
+.login-active {
+  .overlay-container {
+    left: 50%;
+
+    .overlay {
+      transform: translate(0%);
+    }
+  }
+}
