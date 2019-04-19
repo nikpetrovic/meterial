@@ -11,7 +11,7 @@ export default function LoginTip(props) {
           props.onFormSwitchRequest('login-active')
         }}
       >
-        Signup
+        Login
       </button>
     </div>
   )

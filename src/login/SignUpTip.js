@@ -3,7 +3,7 @@ import './SignUpTip.scss'
 
 export default function SignUpTip(props) {
   return (
-    <div className="sign-up-tip-container">
+    <div className="signup-tip-container">
       <h4>This is sign up tip</h4>
       <button
         className="secondary"

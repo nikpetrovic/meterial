@@ -1,20 +1,21 @@
+$animationDuration: 0.4s;
 .forms-container {
   position: relative;
   width: 50%;
   left: 0;
 
-  transition: left 1s ease-in-out;
+  transition: left $animationDuration ease-in-out;
 }
 
 .signup-active {
   .forms-container {
     left: 50%;
     .login-form-container {
-      animation: switch 1s;
+      animation: switch $animationDuration;
       animation-fill-mode: forwards;
     }
     .signup-form-container {
-      animation: invert-switch 1s;
+      animation: invert-switch $animationDuration;
       animation-fill-mode: forwards;
     }
   }
@@ -24,11 +25,11 @@
   .forms-container {
     left: 0;
     .login-form-container {
-      animation: invert-switch 1s;
+      animation: invert-switch $animationDuration;
       animation-fill-mode: forwards;
     }
     .signup-form-container {
-      animation: switch 1s;
+      animation: switch $animationDuration;
       animation-fill-mode: forwards;
     }
   }

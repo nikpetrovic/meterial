@@ -1,0 +1,52 @@
+input {
+  line-height: 2.8;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 0 12px;
+}
+
+button {
+  border-radius: 4rem;
+  border: none;
+  min-width: 140px;
+  line-height: 2.8;
+  padding: 0 1rem;
+  margin: 10px 0;
+  font-weight: 600;
+  outline: none !important;
+  text-transform: uppercase;
+}
+
+button.primary {
+  background-color: #fff;
+  border: 1px solid #696969;
+
+  transition: all 0.2s ease;
+
+  &:active {
+    background-color: #eee;
+  }
+}
+
+button.secondary {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

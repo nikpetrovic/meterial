@@ -1,18 +1,13 @@
 .overlay-container {
+  $animationDuration: 0.4s;
   position: absolute;
   width: 50%;
   height: 100%;
   left: 50%;
   z-index: 100;
-  background-image: linear-gradient(
-    to right,
-    rgb(247, 69, 137),
-    rgb(247, 84, 211)
-  );
-  color: white;
   font-weight: 600;
   overflow: hidden;
-  transition: left 1s ease-in-out;
+  transition: left $animationDuration ease-in-out;
 
   .overlay {
     position: relative;
@@ -20,9 +15,15 @@
     width: 200%;
     height: 100%;
     left: -100%;
+    background-image: linear-gradient(
+      to right,
+      aquamarine,
+      antiquewhite,
+      aquamarine
+    );
     transform: translateX(0%);
 
-    transition: transform 1s ease-in-out;
+    transition: transform $animationDuration ease-in-out;
   }
 }
 

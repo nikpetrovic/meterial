@@ -7,5 +7,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: antiquewhite;
+  padding: 0 2rem;
+  z-index: -1;
+  transition: z-index 0.4s;
+}
+
+.signup-active {
+  .signup-form-container {
+    z-index: 1;
+  }
+}
+
+.login-active {
+  .signup-form-container {
+    z-index: -1;
+  }
 }
