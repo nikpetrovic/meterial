@@ -4,15 +4,11 @@ import './App.scss'
 import QuickNotes from './QuickNotes'
 import moment from 'moment'
 import Calendar from './Calendar'
-import LoginPage from './login/LoginPage'
+import LoginPage from './login'
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <LoginPage />
-      </div>
-    )
+    return <LoginPage />
   }
 }
 

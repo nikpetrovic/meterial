@@ -1,7 +1,7 @@
 import React from 'react'
+import './Forms.scss'
 import LoginForm from './LoginForm'
 import SignUpForm from './SignUpForm'
-import './Forms.scss'
 
 export default function Forms() {
   return (

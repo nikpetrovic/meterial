@@ -1,9 +1,9 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import './LoginPage.scss'
-import LoginForm from './LoginForm'
-import SignUpForm from './SignUpForm'
 import Overlay from './Overlay'
 import Forms from './Forms'
+
+import './LoginPage.scss'
 
 export default function LoginPage() {
   const [activeForm, setActiveForm] = useState('')
